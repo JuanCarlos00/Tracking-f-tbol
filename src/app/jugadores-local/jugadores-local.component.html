@@ -1,0 +1,39 @@
+<table>
+  <h3>Once Titular</h3>
+  <tr *ngFor="let jugador of jugadores">
+    <td>
+      {{jugador.nombre}}
+    </td>
+    <td>
+      G. {{jugador.goles}}
+      <img src="../../assets/Yellow_card.svg"> {{jugador.tarjetas}}
+    </td>
+    <td>
+      <button (click)="sumaGoles(this.jugador.nombre, 1); detectar(1)">Gol!!</button>
+      <button id="expulsion" (click)="sumaTarjetas(this.jugador.nombre, 1); detectar2(1)">Tarjeta <img src="../../assets/Yellow_card.svg"></button>
+    </td>
+  </tr>
+</table>
+<h3>Estadísticas del partido</h3>
+<table>
+  <tr>
+    <td>Goles</td>
+    <td>Posesión</td>
+    <td>Asistencias</td>
+    <td>Tarj. Amarillas</td>
+    <td>Tarj. Rojas</td>
+  </tr>
+</table>
+<h2>Top Players Score</h2>
+<div *ngFor="let jugador of topPlayers" class="top-score">
+  <div>
+    <img [src]="jugador.imagen" width="80px">
+  </div>
+  <div>
+    {{jugador.nombre}}
+  </div>
+  <div>
+    {{jugador.goles}}
+  </div>   
+</div>
+

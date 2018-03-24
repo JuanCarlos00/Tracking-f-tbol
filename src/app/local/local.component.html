@@ -1,0 +1,11 @@
+<div class="local">
+  <div class="marcador-loc">
+    <img src="assets/FC_Barcelona_(crest).svg" alt="FCB logo">
+    <p>F. C. Barcelona</p>
+    <p class="digitos">{{dobleDigito}} {{tarjCont}}</p>
+  </div>
+  <app-jugadores-local [jugadores]="jugadores" 
+                       (gol)="recibeGoles($event)"
+                       (tarjeta)="recibeTarjetas($event)">
+  </app-jugadores-local>
+</div>

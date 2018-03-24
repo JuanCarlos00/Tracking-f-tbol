@@ -1,0 +1,28 @@
+<table class="jug-visit">
+  <h3>Once Titular</h3>
+  <tr *ngFor="let jugador of jugadores">
+    <td>
+      {{jugador.nombre}}
+    </td>
+    <td>
+      {{jugador.puntos}}
+    </td>
+    <td>
+      <button (click)="sumaPuntos(this.jugador.nombre, 1); detectar(1)">T. Libre</button>
+      <button (click)="sumaPuntos(this.jugador.nombre, 2); detectar(2)">Tiro de 2</button>
+      <button (click)="sumaPuntos(this.jugador.nombre, 3); detectar(3)">Triple</button>
+    </td>
+  </tr>
+</table>
+<h2 class="tsv">Top Players Score</h2>
+<div *ngFor="let jugador of topPlayers" class="top-score-tsv">
+  <div>
+    <img [src]="jugador.imagen" width="80px">
+  </div>
+  <div>
+    {{jugador.nombre}}
+  </div>
+  <div>
+    {{jugador.puntos}}
+  </div>   
+</div>

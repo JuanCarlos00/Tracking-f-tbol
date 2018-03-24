@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.local {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+
+.visitante {
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+.marcador-loc {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("./assets/champions-league-fondo.jpg");
+    background-size: contain;
+    background-position: center;
+    padding: 20px 40px;
+}
+
+.marcador-vis {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url("./assets/champions-league-fondo.jpg");
+    background-size: contain;
+    background-position: center;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.marcador-loc img {
+    max-height: 100%;
+}
+
+.marcador-vis img {
+    max-height: 100%;
+}
+
+.marcador-loc p {
+    font-size: 30px;
+    color: white
+}
+
+.marcador-vis p {
+    font-size: 30px;
+    color: white
+}
+
+.local .marcador p {
+    color: black
+}
+
+.visitante .marcador p {
+    color: rgba(255, 0, 0, 0.9)
+}
+
+.marcador .digitos {
+    font-size: 50px;
+}
+
+#logo {
+    max-width: 130px;
+    position: relative;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+table, tr {
+    width: 100%;    
+}
+
+tr:nth-child(even) {
+    background-color: white;
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px 0;
+}
+tr:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.6);
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.jug-visit tr:nth-child(odd) {
+    background-color: rgba(255, 0, 0, 0.9);
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+td:nth-child(1) {
+    width: 40%;
+}
+
+td:nth-child(2) {
+    width: 20%;
+    text-align: center
+}
+
+td:nth-child(3) {
+    width: 40%;
+    text-align: right
+}
+
+button {
+    font-size: 16px;
+    color: white;
+    background-color:#0E499D;
+    padding: 4px 8px;
+    border-radius: 5px; 
+    border: none;
+}
+
+h2 {
+    padding: 20px;
+    color: black;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.6)
+}
+
+.top-score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0px;
+}
+
+.top-score:nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.6);
+}
+
+.top-score div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 20%
+}
+
+.top-score div:nth-child(2) {
+    width: 60%;
+    text-align: initial;
+    font-size: 22px;
+    padding-left: 30px;
+}
+
+.top-score div:nth-child(3) {
+    width: 20%;
+    text-align: right;
+    font-size: 22px;
+}
+
+.tsv {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.9)
+}
+
+
+.top-score-tsv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0px;
+}
+
+.top-score-tsv:nth-child(even) {
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
+.top-score-tsv div:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 20%
+}
+
+.top-score-tsv div:nth-child(2) {
+    width: 60%;
+    text-align: initial;
+    font-size: 22px;
+    padding-left: 30px;
+}
+
+.top-score-tsv div:nth-child(3) {
+    width: 20%;
+    text-align: right;
+    font-size: 22px;
+}

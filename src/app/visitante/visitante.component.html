@@ -1,0 +1,10 @@
+<div class="visitante">
+  <div class="marcador-vis">
+    <p class="digitos">{{dobleDigito}}</p>
+    <p>Bayern Munich</p>
+    <img src="assets/FC_Bayern_München_Logo.svg" alt="Logo Bayern">
+  </div>
+  <app-jugadores-visitante [jugadores]="jugadores" 
+                         (canasta)="recibePuntos($event)">
+  </app-jugadores-visitante>
+</div>

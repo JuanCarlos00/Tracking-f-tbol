@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="10px" height="15px">
+	<defs>
+	</defs>
+	<rect width="10" height="15" opacity="0.5"/>
+	<rect width="10" height="15" fill="#ffce00"/>
+	<rect width="10" height="15" fill="url(#lg)" />
+</svg>
